@@ -1,0 +1,53 @@
+.gridContainer {
+  background-color: var(--background-color);
+  border-radius: 30px;
+  width: 1440px;
+  height: 887px;
+  margin: 0px auto;
+  display: grid;
+  color: var(--text-color);
+  border-radius: 30px;
+  font-family: "katibeh";
+
+  background: rgb(255, 236, 225);
+  background: -moz-linear-gradient(
+    146deg,
+    rgba(255, 236, 225, 1) 0%,
+    rgba(226, 248, 250, 1) 33%,
+    rgba(255, 255, 255, 1) 98%
+  );
+  background: -webkit-linear-gradient(
+    146deg,
+    rgba(255, 236, 225, 1) 0%,
+    rgba(226, 248, 250, 1) 33%,
+    rgba(255, 255, 255, 1) 98%
+  );
+  background: linear-gradient(
+    146deg,
+    rgba(255, 236, 225, 1) 0%,
+    rgba(226, 248, 250, 1) 33%,
+    rgba(255, 255, 255, 1) 98%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffece1",endColorstr="#ffffff",GradientType=1);
+  grid-template-areas: "navbar navbar navigation chef chef chef chef chef" "navbar navbar navigation cobb cobb cobb cesar cesar" "navbar navbar navigation cobb cobb cobb greek greek";
+
+  gap: calc(var(--spacing) * 6);
+}
+.navbar {
+  grid-area: navbar;
+}
+.navigation {
+  grid-area: navigation;
+}
+.chef__card {
+  grid-area: chef;
+}
+.cobb__card {
+  grid-area: cobb;
+}
+.cesar__card {
+  grid-area: cesar;
+}
+.greek__card {
+  grid-area: greek;
+}
